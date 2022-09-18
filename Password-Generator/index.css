@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-family: sans-serif;
+    color: #fff;
+    box-sizing: border-box;
+  }
+  body,
+  html {
+    background: #1f2937;
+  }
+  h1 {
+    color: #fff;
+    font-size: 2rem;
+    max-width: 350px;
+  }
+  button {
+    background: #10b981;
+    border: none;
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+  }
+  button:hover {
+    /*   transform: scale(1.2); */
+    color: #10b981;
+    background: #F5F5DC;
+  }
+  p sup em {
+    font-size: 0.5rem;
+    cursor: pointer;
+  }
+  
+  
+  #main {
+    padding: 2rem;
+  }
+  #instructions {
+    margin-top: 1rem;
+  }
+  #optionsdiv {
+    display: none;
+  /*   border: 1px solid yellow; */
+    border-radius: 10px;
+    padding: 0.25rem;
+    position: fixed;
+    width: 75vw;
+    left: 10vw;
+    top: 12.5vh;
+    margin: 0 auto;
+    background: rgba(0,0,0,0.9);
+    max-width: 27rem;
+  }
+  
+  input:hover {
+    cursor: pointer;
+    color: #1f2937;
+    background: #F5F5DC;
+  }
+  label:hover {
+    cursor: pointer;
+    color: #1f2937;
+    background: #F5F5DC;
+  }
+  
+  .quarterpadmarg {
+    padding: 0.13rem 0.25rem;
+    margin: 0.25rem 0.25rem;
+    border: 1px solid;
+    background: crimson;
+  }
+  .col {
+    flex-direction: column;
+  }
+  .row {
+    flex-direction: row;
+  }
+  .flex {
+    display: flex;
+    flex-direction: column;
+  }
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .text-lightgray {
+    color: #d5d4d8;
+  }
+  .text-green {
+    color: #10b981;
+  }
+  .h1spantext {
+    font-size: 2rem;
+  }
+  .margin-top-1rem {
+    margin-top: 1rem;
+  }
+  .maxwidth {
+    max-width: 27rem;
+  }
+  .thin-line {
+    border-top: 3px solid black;
+  }
+  .password {
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 13rem;
+    background: #273549;
+    color: #55f991;
+    padding: 1rem 0;
+    cursor: pointer;
+  }
+  .pwleft {
+    margin: 0 1rem 1rem 0;
+  }
+  /* .pwcol {
+    padding: ;
+    margin: ;
+  } */
+  .inputwidth {
+    width: 12rem;
+    font-size: 0.8rem;
+  }
+  .btn-center {
+    width: 100%;
+    margin-left: auto;
+  }
+  
+  @media only screen and (max-width: 649px) {
+    .container {
+      width: 300px;
+      margin: 0 auto;
+    }
+    .flex {
+      flex-direction: column;
+    }
+    .pwcol {
+      padding: 1rem;
+      margin: 1rem 0;
+    }
+    /* .pwleft {
+      padding: ;
+      margin: ;
+    }
+    .pwright {
+      padding: ;
+      margin: ;
+    } */
+    .maxwidth {
+      width: 14rem;
+    }
+    .inputwidth {
+      width: 12rem;
+      font-size: 0.8rem;
+    }
+  }
+  
+  @media only screen and (min-width: 650px) {
+    #optionsdiv {
+      display: none;
+      /*border: 1px solid yellow;*/
+      border-radius: 10px;
+      padding: 0.25rem;
+      position: fixed;
+      width: 240px;
+      left: 2rem;
+      top: 2rem;
+      background: rgba(0,0,0,0.9);
+    }
+    #main {
+      padding-left: 290px;
+      margin: 0;
+    }
+    .password {
+      border: none;
+      border-radius: 10px;
+      text-align: center;
+      max-width: 13rem;
+      background: #273549;
+      color: #55f991;
+      padding: 1rem 0;
+      cursor: pointer;
+      margin: 0.5rem;
+    }
+    .container {
+      max-width: 600px;
+      margin: 0;
+    }
+  }

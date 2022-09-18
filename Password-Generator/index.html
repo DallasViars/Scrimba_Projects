@@ -1,0 +1,43 @@
+<html lang="en">
+
+<head>
+  <title>Password Generator</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <div id="main">
+    <div id="optionsdiv" class="flex col">
+    </div>
+    <div class="container">
+
+      <div id="top" class="maxwidth">
+        <h1>Generate a <span class="text-green h1spantext">random password</span></h1>
+        <p class="text-lightgray">Never use an insecure password again.</p>
+        <button id="btn" class="margin-top-1rem" onclick="generate()">⚡ Generate passwords</button>
+        <p onclick="options()"><sup><em>Options</em></sup></p>
+      </div>
+      <!--closes top-->
+
+      <div class="thin-line margin-top-1rem maxwidth"></div>
+      <p id="instructions" class="text-lightgray">Once generated, click or touch a password to copy it to your clipboard.</p>
+      <div id="bottom" class="flex margin-top-1em maxwidth">
+        <div>
+          <input type="text" id="one" class="password text-green pwleft pwcol inputwidth" onclick="copyToClipboard('one')" tabindex="-1">
+          <input type="text" id="two" class="password text-green pwright pwcol inputwidth" onclick="copyToClipboard('two')" tabindex="-1">
+        </div>
+        <div>
+          <input type="text" id="three" class="password text-green pwleft pwcol inputwidth" onclick="copyToClipboard('three')" tabindex="-1">
+          <input type="text" id="four" class="password text-green pwright pwcol inputwidth" onclick="copyToClipboard('four')" tabindex="-1">
+        </div>
+
+      </div>
+      <!--closes bottom-->
+    </div>
+    <!--closes container-->
+  </div>
+  <!--closes main-->
+  <script src="index.js"></script>
+</body>
+
+</html>
