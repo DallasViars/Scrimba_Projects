@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="index.css" rel="stylesheet">
+    <title>Scrimba Invoice Creator</title>
+</head>
+<body>    
+    <div id="title" class="title">
+      <h1>Invoice Creator</h1>
+      <p>Thank you for choosing Finn's Fine Foods</p>
+    </div><!--closes title-->
+    <div id="services" class="services">
+      <button id="blondies" class="services-btn" onclick="addToInvoice(`Blondies`)">Blondies: $20</button>
+      <button id="brownies" class="services-btn" onclick="addToInvoice(`Brownies`)">Brownies: $15</button>
+      <button id="lemonpie" class="services-btn" onclick="addToInvoice(`Lemon pie`)">Lemon Pie: $25</button>
+    </div><!--closes services-->
+    <div id="invoice" class="invoice">
+      <div id="invoiceheadings" class="container">
+        <div class="flexleft"><p>Item</p></div>
+        <div class="flexright"><p>Price</p></div>
+      </div>
+      <div id="invoicecontainer">
+
+      </div><!--closes invoicecontainer-->
+    </div><!--closes invoice-->
+    <div class="line-divider"></div>
+    <div id="sendinvoice" class="sendinvoice">
+      <div class="container">
+        <div><p>NOTES</p></div>
+        <div><p>TOTAL AMOUNT</p></div>
+      </div>
+      <div class="container">
+        <div><p class="text-lighttoffee text-small">We accept cash or credit card</p></div>
+        <div><p id="invoicetotal" class="text-large text-bold"></p></div>
+      </div>
+      <button class="send-btn text-large" onclick="sendInvoice()">📧 Send invoice</button>
+    </div><!--closes sendinvoice-->
+    <script src="index.js"></script>
+  </body>
+</html>
