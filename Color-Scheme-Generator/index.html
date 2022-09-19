@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Scheme Generator</title>
+    <link href="index.css" rel="stylesheet">
+</head>
+<body class="flex">
+    <div id="main" class="main">
+      <div id="selector-div" class="flex">
+        <label for="color-picker" class="wideflex">
+          <div class="flex">
+            <input id="color-input" type="color" tabindex="1">
+            <select id="color-scheme" tabindex="2">
+              <option value="Monochrome">Monochrome</option>
+              <option value="Monochrome-dark">Monochrome-dark</option>
+              <option value="Monochrome-light">Monochrome-light</option>
+              <option value="Analogic">Analogic</option>
+              <option value="Complement">Complement</option>
+              <option value="Analogic-complement">Analogic-complement</option>
+              <option value="Triad">Triad</option>
+              <option value="Quad">Quad</option>
+            </select>
+          </div>
+          <button id="my-btn" class="btn" tabindex="3">Get color scheme</button>
+          <button id="toggle-animation-btn" class="btn btn-animation" tabindex="4">Toggle animation</button>
+        </label>
+      </div>
+      <div id="colors" class="wideflex">
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
