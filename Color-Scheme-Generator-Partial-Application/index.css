@@ -1,0 +1,128 @@
+*, *::before, *::after { box-sizing: border-box; }
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Barlow", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+}
+p, h1, h2, h3, h4, h5 { margin: 0; }
+
+body {
+  color: #fff;
+  text-align: center;
+  padding-bottom: 2em;
+  overflow-x: hidden;
+}
+input[type="color"] {
+  height: 3.5em;
+  width: 3.5em;
+  cursor: pointer;
+  transition: all 0.75s;
+}
+input[type="color"]:hover,
+input[type="color"]:active {
+  background: #6a6262;
+}
+select {
+  padding: 1em;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.75s;
+}
+select:hover,
+select:active {
+  background: #000;
+  color: #fff;
+}
+button {
+  cursor: pointer;
+  max-width: 300px;
+  width: 100%;
+  margin-top: 1em;
+  padding: 1em;
+  font-weight: 700;
+  background: #fff;
+  transition: 0.75s background;
+}
+button:hover,
+button:focus,
+button:active {
+  background: black;
+  color: white;
+}
+#selector-div {
+  padding: 2em;
+}
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hex {
+  text-align: center;
+  writing-mode: vertical-lr; 
+  padding: 0.5em;
+  transform: translate(0.9em, -0.3em) rotate(225deg)
+}
+.rotate-animation-true {
+  animation: 2s ease-in-out 0s 1 rotateIntoPlace;
+}
+.rotate-animation-false {
+  /* This is a placeholder so when animations are turned off there isn't an error */
+  font-family: inherit;
+}
+.main {
+  width: 100%;
+  padding: 0 1em;
+  max-width: 900px;
+}
+.color {
+  padding: 0 1em;
+}
+@keyframes rotateIntoPlace {
+  0% {transform: rotate(180deg) translateX(30em);}
+  100% {transform: rotate(0deg) translateX(0em);}
+}
+
+@media (min-width: 750px) {
+  body {
+    height: 100vh;
+  }
+  label.wideflex {
+    align-items: flex-end;
+  }
+  button {
+    margin-left: 1em;
+    white-space: nowrap;
+  }
+  input[type="color"] {
+    margin-right: 1em;
+  }
+  h2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+    #selector-div {
+    height: 20vh;
+    padding: 2em 0;
+  }
+  .color {
+    width: 20%;
+    padding: 0;
+  }
+  .wideflex {
+    display: flex;
+    justify-content: space-between;
+    align-items: space-between;
+  }
+  .display-color {
+    height: 60vh;
+  }
+  .hex {
+    writing-mode: initial; 
+    transform: initial;
+  }
+}
