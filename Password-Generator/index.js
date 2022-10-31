@@ -1,7 +1,3 @@
-// Room for improvement:
-//   Add user ability to store selected passwords in localStorage?
-//      How to make this option safe?
-
 const optionsDiv = document.getElementById("optionsdiv");
 const oneEl = document.getElementById("one");
 const twoEl = document.getElementById("two");
@@ -55,11 +51,9 @@ function randNum(max = 8, min = 0) {
 }
 function options() {
   if (!showOptions) {
-    console.log("Show options turning to true");
     showOptions = true;
     optionsDiv.style.display = "block";
   } else {
-    console.log("Show options turning to false");
     showOptions = false;
     optionsDiv.style.display = "none";
   }
