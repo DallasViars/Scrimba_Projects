@@ -94,3 +94,39 @@ The Color Scheme Generator was my first solo foray into REST API use and I was i
   #### Notes, thoughts, and methodology:
 Having just learned about the idea behind Partial Application I set out to find a project I'd already done and apply what I'd learned to it. Refactoring the original Color Scheme Generator code was more challenging than I originally thought it would be, but the resulting code appears cleaner and easier to read as well as having components that are more readily suited to be used in other projects without significant reworking. 
 </details>
+<details>
+  <summary> Invoice Creator  </summary>
+  
+  [Invoice Creator](https://dallasviars.github.io/Scrimba_Projects/Invoice-Creator/)
+  
+  #### Project requirements: 
+  - Use an array to hold services requested
+  - Buttons to add service to array
+  - Place to display data from the array
+  - Update display each time the array is changed
+  - Can only use each service once
+  - Total cos stays updated
+  - Button to "send invoice" (reset page)
+  - Stretch: Add ability to remove items after they've been added
+
+  
+  #### Skills used:
+  - Use of 1D objects
+  - DOM manipulation
+  - Use of .slice(), .reduce(), and .map() methods
+
+  
+  #### Notes, thoughts, and methodology:
+  - This was one of the first Scrimba Solo Projects I created. Like many other challenges I had a fun time doing this one. Looking back now I see many places where I could improve my code (some of the more obvious changes for a future refactoring listed below). 
+  - The Figma file for this project suggested items related to lawn care, but since this is a Solo Project and the content for it is flexible I chose Bakery items since I love to bake, and feeding people tasty things is something I enjoy very much.
+  - I decided to leave this project here without refactoring it as an easy reference point on how my code has improved with expereience.
+
+  #### Room for improvement:
+  - Remember to remove unnecessary instances of console.log()
+  - Remember to remove code that has been commented out
+  - Simplify comparisons to use the ternary operator when it will improve readability
+  - Use better naming conventions in CSS and Javascript (i.e. instead of `addToInvoice(x)` use `addToInvoice(item)`)
+  - Use `.classList.toggle(className)` instead of using multiple lines to change individual CSS properties
+  - Rework functions to avoid onclick function calls in the HTML
+  
+</details>
