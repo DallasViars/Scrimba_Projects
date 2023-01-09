@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.cdnfonts.com/css/cursed-timer-ulil" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <title>Basketball Scoreboard</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="scoreboard">
+          <h3>HOME</h3>
+          <div class="scorebox">
+              <p id="home" class="score scoreboard-font">00</p>
+          </div>
+          <div class="btn-container">
+              <button class="scoreboard-btn scoreboard-font" data-score="1" data-team="home">+1</button>
+              <button class="scoreboard-btn scoreboard-font" data-score="2" data-team="home">+2</button>
+              <button class="scoreboard-btn scoreboard-font" data-score="3" data-team="home">+3</button>
+          </div>
+      </div>
+      <div class="scoreboard">
+          <h3>GUEST</h3>
+          <div class="scorebox">
+              <p id="guest" class="score scoreboard-font">00</p>
+          </div>
+          <div class="btn-container">
+              <button class="scoreboard-btn scoreboard-font" data-score="1" data-team="guest">+1</button>
+              <button class="scoreboard-btn scoreboard-font" data-score="2" data-team="guest">+2</button>
+              <button class="scoreboard-btn scoreboard-font" data-score="3" data-team="guest">+3</button>
+          </div>
+      </div>
+      <div class="game-over">
+        <p class="win-msg">Team wins!</p>
+        <button id="reset-game">Start a new game?</button>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
