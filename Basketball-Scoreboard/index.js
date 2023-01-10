@@ -23,9 +23,6 @@ function resetGame() {
   guestScore.classList.remove("leader");
 }
 
-
-
-
 scoreButtons.forEach(button => button.addEventListener("click", event => {
   
   if (event.target.dataset.team === "home") {
@@ -39,7 +36,7 @@ scoreButtons.forEach(button => button.addEventListener("click", event => {
    
 }));
 
-function handleScore(reset, event) {
+function handleScore() {
   let score = 0;
   return function addScore(reset, event) {
       if (reset) {

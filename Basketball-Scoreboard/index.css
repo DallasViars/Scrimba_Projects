@@ -88,3 +88,21 @@ h3 {
     font-size: 3em;
     padding: 0.5em;
 }
+
+#reset-game {
+    background: rgba(0, 0, 0, 0.9);
+    color: #9AABD8;
+    padding: 1em 2em;
+    border-radius: 5px;
+    border: 1px solid;
+    transition: all 0.75s;
+    font-weight: 700;
+}
+#reset-game:hover, #reset-game:focus {
+    background: rgb(204 255 128);
+    color: rgba(8, 0, 1, 0.8);
+}
+#reset-game:active {
+    transform: scale(0.97);
+    background: rgb(0 230 0);
+}
